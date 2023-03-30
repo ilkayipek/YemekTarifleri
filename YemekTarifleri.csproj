@@ -8,8 +8,29 @@
 
   <ItemGroup>
     <None Remove="Views\DetailRecipe\" />
+    <None Remove="Content\" />
+    <None Remove="img\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\DetailRecipe\" />
+    <Folder Include="Content\" />
+    <Folder Include="wwwroot\Image\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Content\images\gorselsec.png" />
+    <Content Remove="wwwroot\Content\images\paris.jpeg" />
+    <Content Remove="wwwroot\Content\images\superman.jpeg" />
+    <Content Remove="wwwroot\Content\images\" />
+    <Content Remove="wwwroot\Image\gorselsec.png" />
+    <Content Remove="wwwroot\Image\paris.jpeg" />
+    <Content Remove="wwwroot\Image\superman.jpeg" />
+    <Content Remove="wwwroot\Image\" />
+    <Content Remove="wwwroot\Image\kizkulesi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Image\gorselsec.png" />
+    <None Include="wwwroot\Image\paris.jpeg" />
+    <None Include="wwwroot\Image\superman.jpeg" />
+    <None Include="wwwroot\Image\kizkulesi.jpg" />
   </ItemGroup>
 </Project>

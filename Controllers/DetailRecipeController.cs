@@ -11,7 +11,7 @@ namespace YemekTarifleri.Controllers
     public class DetailRecipeController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index()
+        public IActionResult DetailRecipeList()
         {
             return View();
         }

@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/YemekTarifleri.bundle.scp.css"
     },
     {
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/roma.jpg",
+      "PackagePath": "staticwebassets/Image/roma.jpg"
+    },
+    {
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",
+      "PackagePath": "staticwebassets/css/RecipeCollection.css"
+    },
+    {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

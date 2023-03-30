@@ -1,9 +1,79 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var path1 = "Image/roma.jpg";
+    var path2 = "Image/paris.jpeg";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
 
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">
+        Günün Yemeği:
+    </h1>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+        <div class="col-md-8">
+            <img class="img-fluid" src=@path1 alt="" style="height: 300px;">
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="my-3">Yemek Adı</h3>
+            <p>Açıklama</p>
+            <h3 class="my-3">İçindekiler</h3>
+            <ul>
+                <li>Lorem Ipsum</li>
+                <li>Dolor Sit Amet</li>
+                <li>Consectetur</li>
+                <li>Adipiscing Elit</li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- /.row -->
+    <!-- Related Projects Row -->
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="my-4">
+            <small>Tarifler</small>
+        </h1>
+
+        <div class="row">
+            <div class="row mb-5">
+                @for (int i = 0; i < 50; i++)
+                    {
+                        <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                            <div class="card card-inverse card-info">
+                                <img class="card-img-top" src=@path2>
+                                <div class="card-block">
+                                    <figure class="profile">
+                                        <img src=@path2 class="profile-avatar" alt="">
+                                    </figure>
+                                    <h6 class="card-title mt-3">Ad Soyad</h6>
+                                    <div class="meta card-text">
+                                        <h4>Yemek Adı</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        Tawshif is a web designer living in Bangladesh.
+                                        Tawshif is a web designer living in Bangladesh.
+                                        Tawshif is a web designer living in Bangladesh.
+                                        Tawshif is a web designer living in Bangladesh.
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <small>Last updated 3 mins ago</small>
+                                    <button class="btn btn-info float-right btn-sm">Detay</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+            </div>
+
+        </div>
+    </div>
+</div>

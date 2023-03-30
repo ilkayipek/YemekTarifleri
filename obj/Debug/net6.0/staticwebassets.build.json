@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yNkTO+0unbkxu+D8ojgxQtSwzYG6TEXV1xlOtHBPCrM=",
+  "Hash": "y60y46eMy+s+x+2UOnhJUe/05lmr3wnOMtas9wYfwqM=",
   "Source": "YemekTarifleri",
   "BasePath": "_content/YemekTarifleri",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Debug/net6.0/scopedcss/projectbundle/YemekTarifleri.bundle.scp.css"
     },
     {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": "css/RecipeCollection.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/RecipeCollection.css"
+    },
+    {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/site.css",
       "SourceId": "YemekTarifleri",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/roma.jpg",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": "Image/roma.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Image/roma.jpg"
     },
     {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/js/site.js",
