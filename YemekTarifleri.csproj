@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Views\DetailRecipe\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\DetailRecipe\" />
+  </ItemGroup>
 </Project>
