@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    var cities = new List<string>();
+    cities.Add("New York");
+    cities.Add("London");
+    cities.Add("Mumbai");
+    cities.Add("Chicago");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,12 +17,13 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/YemekTarifleri.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/RecipeCollection.css" asp-append-version="true" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/search.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 row">
+            <div class="container-fluid col-lg-4">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">YemekTarifleri</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +34,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="CategoryList">Kategoriler</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                @foreach (var item in cities)
+                                {
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Category" asp-action="CategoryList">@item</a></li>
+                                }
+
+
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -33,6 +53,20 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="custom-search-input ">
+                    <div class="input-group">
+                        <input type="text" class="search-query form-control" placeholder="Search" />
+                        <span class="input-group-btn">
+                            <button type="button">
+                                <span class="fa fa-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4"></div>
         </nav>
     </header>
     <div class="container">

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xjFHR85acUw2fWb3dZ+uov3l3A8sBPPurpQBZuTAfTE5Mv8P93XtZYIYoyr6BvYd0EX8oYRBoDkjqrhc4MrCkg==",
+  "dgSpecHash": "tfEDvJw1+KU3bWgUhm6KtMyWBp3vIXC8B4JdHYoy8LzU9PCqZ15dIySbTrkDGqAqx/Ab9+NKvslo/xESEQa2/A==",
   "success": true,
   "projectFilePath": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/YemekTarifleri.csproj",
-  "expectedPackageFiles": [
-    "/Users/macbook/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
-    "/Users/macbook/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
-    "/Users/macbook/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.11/microsoft.netcore.app.host.osx-x64.6.0.11.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

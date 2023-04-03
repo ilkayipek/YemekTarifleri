@@ -23,6 +23,11 @@ public class HomeController : Controller
         return View();
     }
 
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("DetailRecipe.cshtml");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

@@ -2,6 +2,7 @@
     ViewData["Title"] = "Home Page";
     var path1 = "Image/roma.jpg";
     var path2 = "Image/paris.jpeg";
+    
 }
 
 
@@ -56,7 +57,10 @@
                                     </figure>
                                     <h6 class="card-title mt-3">Ad Soyad</h6>
                                     <div class="meta card-text">
-                                        <h4>Yemek Adı</h4>
+                                        <h4>
+                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe">Yemek Adı</a>
+                                            
+                                        </h4>
                                     </div>
                                     <div class="card-text">
                                         Tawshif is a web designer living in Bangladesh.
@@ -67,8 +71,9 @@
                                 </div>
                                 <div class="card-footer">
                                     <small>Last updated 3 mins ago</small>
-                                    <button class="btn btn-info float-right btn-sm">Detay</button>
+
                                 </div>
+                                <asp:Button ID="Button1" runat="server" Text="Sayfaya Git" OnClick="Button1_Click" />
                             </div>
                         </div>
                     }
