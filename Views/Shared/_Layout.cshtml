@@ -1,10 +1,10 @@
 ﻿
 @{
-    var cities = new List<string>();
-    cities.Add("New York");
-    cities.Add("London");
-    cities.Add("Mumbai");
-    cities.Add("Chicago");
+    var recipes = new List<string>();
+    recipes.Add("Et Yemekleri");
+    recipes.Add("Çorbalar");
+    recipes.Add("Salatalar");
+    recipes.Add("Tatlılar");
 }
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
                                 Dropdown link
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                @foreach (var item in cities)
+                                @foreach (var item in recipes)
                                 {
                                     <li><a class="dropdown-item" asp-area="" asp-controller="Category" asp-action="CategoryList">@item</a></li>
                                 }

@@ -29,3 +29,14 @@
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.pdb
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.genruntimeconfig.cache
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/ref/YemekTarifleri.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Logging.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Options.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.csproj.CopyComplete
