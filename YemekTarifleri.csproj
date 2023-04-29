@@ -10,11 +10,13 @@
     <None Remove="Views\DetailRecipe\" />
     <None Remove="Content\" />
     <None Remove="img\" />
+    <None Remove="DataBase\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\DetailRecipe\" />
     <Folder Include="Content\" />
     <Folder Include="wwwroot\Image\" />
+    <Folder Include="DataBase\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Content\images\gorselsec.png" />
