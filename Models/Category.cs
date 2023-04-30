@@ -1,24 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace YemekTarifleri.DataBase
+namespace TrialWebApp.DataBase
 {
-    [Table("Tbl_Kullanicilar")]
-    public class User
+    [Table("Tbl_Kategoriler")]
+    public class Kategori
     {
         [Key]
-        [Column("kullaniciId")]
+        [Column("kategoriId")]
         public int? id { get; set; }
-        [Column("kullaniciKullaniciAdi")]
-        public String? userName { get; set; }
-        [Column("kullaniciSifre")]
-        public String? password { get; set; }
-        [Column("kullaniciMail")]
-        public String? email { get; set; }
-        [Column("kullaniciAdSoyad")]
-        public String? nameAndSurname { get; set; }
-        public Boolean? userType { get; set; }
-        [Column("kullaniciAvatar")]
-        public String? avatar { get; set; }
+        [Column("kategoriAd")]
+        public String? name { get; set; }
+        [Column("kategoriAdet")]
+        public int? piece { get; set; }
+        [Column("kategoriResim")]
+        public String? image { get; set; }
     }
 }
