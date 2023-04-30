@@ -13,7 +13,7 @@ namespace YemekTarifleri.Models
         public string? name { get; set; }
         [Column("tarifMalzeme")]
         public string? ingredients { get; set; }
-        [Column("tarifYapılış")]
+        [Column("tarifYapilis")]
         public string? cooking { get; set; }
         [Column("tarifResim")]
         public string? image { get; set; }

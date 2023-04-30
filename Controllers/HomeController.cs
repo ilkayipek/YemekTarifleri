@@ -19,6 +19,8 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewBag.title = "Home Page";
+        ApplicationConnectionDb db = new ApplicationConnectionDb();
+        ViewBag.Recipes = db.recips.ToList();
         return View();
     }
 
