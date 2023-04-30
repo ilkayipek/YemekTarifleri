@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TrialWebApp.DataBase
+namespace YemekTarifleri.Models
 {
     [Table("Tbl_Kategoriler")]
     public class Kategori
