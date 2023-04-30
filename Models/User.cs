@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace YemekTarifleri.DataBase
+namespace YemekTarifleri.Models
 {
     [Table("Tbl_Kullanicilar")]
     public class User
