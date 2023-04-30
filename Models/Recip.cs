@@ -6,6 +6,7 @@ namespace YemekTarifleri.Models
     [Table("Tbl_Tarifler")]
 	public class Recip
 	{
+        [Key]
         [Column("tarifId")]
         public int? id { get; set; }
         [Column("tarifAd")]
@@ -24,7 +25,7 @@ namespace YemekTarifleri.Models
         public int? categoryId { get; set; }
         [Column("kullaniciId")]
         public int? userId { get; set; }
-        [Column("GununYemegimi")]
+        [Column("gununYemegimi")]
         public bool? isMealOfDay { get; set; }
     }
 }
