@@ -17,6 +17,7 @@ namespace YemekTarifleri.DataBase
         public String? email { get; set; }
         [Column("kullaniciAdSoyad")]
         public String? nameAndSurname { get; set; }
+        [Column("kullaniciTipi")]
         public Boolean? userType { get; set; }
         [Column("kullaniciAvatar")]
         public String? avatar { get; set; }
