@@ -19,11 +19,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
     protected void Button1_Click(object sender, EventArgs e)
     {
         Response.Redirect("DetailRecipe.cshtml");

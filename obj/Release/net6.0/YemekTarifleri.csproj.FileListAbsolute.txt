@@ -40,3 +40,15 @@
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Options.dll
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Primitives.dll
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.csproj.CopyComplete
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Humanizer.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Mono.TextTemplating.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/MySqlConnector.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.CodeDom.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.Text.Encodings.Web.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.Text.Json.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
