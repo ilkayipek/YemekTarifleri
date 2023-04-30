@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace YemekTarifleri.Models
 {
     [Table("Tbl_Kategoriler")]
-    public class Kategori
+    public class Category
     {
         [Key]
         [Column("kategoriId")]
