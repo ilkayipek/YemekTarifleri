@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using YemekTarifleri.Models;
+using YemekTarifleri.DataBase;
+using Microsoft.EntityFrameworkCore;
 
 namespace YemekTarifleri.Controllers;
 
@@ -11,6 +13,7 @@ public class HomeController : Controller
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+        
     }
 
     public IActionResult Index()

@@ -52,3 +52,12 @@
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.Text.Encodings.Web.dll
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.Text.Json.dll
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.AspNetCore.Razor.Language.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.CodeAnalysis.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.CodeAnalysis.Razor.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Newtonsoft.Json.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Newtonsoft.Json.Bson.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.Security.Permissions.dll

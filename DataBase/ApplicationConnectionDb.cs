@@ -8,8 +8,10 @@ namespace YemekTarifleri.DataBase
 {
     public class ApplicationConnectionDb : DbContext
     {
-        public DbSet<Category> kategoriler { get; set; }
-        public DbSet<User> kullanicilar { get; set; }
+        public DbSet<Category> categories { get; set; }
+        public DbSet<User> users { get; set; }
+        public DbSet<Recip> recips { get; set; }
+        public DbSet<Comment> comments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

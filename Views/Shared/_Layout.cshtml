@@ -1,10 +1,8 @@
-﻿
+﻿@using YemekTarifleri.DataBase;
+@using YemekTarifleri.Models
 @{
-    var recipes = new List<string>();
-    recipes.Add("Et Yemekleri");
-    recipes.Add("Çorbalar");
-    recipes.Add("Salatalar");
-    recipes.Add("Tatlılar");
+    ApplicationConnectionDb db = new ApplicationConnectionDb();
+    var categories = db.categories.ToList(); 
 }
 
 <!DOCTYPE html>
@@ -36,13 +34,15 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                                Kategoriler
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                @foreach (var item in recipes)
+                                
+                                @foreach (Category item in categories)
                                 {
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Category" asp-action="CategoryList">@item</a></li>
-                                }
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="Category" asp-action="CategoryList" asp-route-categoryId="@item.id">@item.name (@item.piece)</a></li>
+                                        
+                                 }
 
 
                             </ul>
@@ -80,6 +80,7 @@
         <div class="container">
             &copy; 2023 - YemekTarifleri - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
+       
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
