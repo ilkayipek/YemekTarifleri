@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/YemekTarifleri.bundle.scp.css"
     },
     {
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/avatar.jpg",
+      "PackagePath": "staticwebassets/Image/avatar.jpg"
+    },
+    {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/roma.jpg",
       "PackagePath": "staticwebassets/Image/roma.jpg"
     },

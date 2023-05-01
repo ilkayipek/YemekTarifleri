@@ -1,9 +1,9 @@
 ﻿@{
     
     var path1 = "Image/roma.jpg";
-    var path2 = "Image/paris.jpeg";
+    var path2 = "Image/avatar.jpg";
 
-    var recips = ViewBag.Recips;
+    var recips = ViewBag.Recipes;
 }
 
 
@@ -49,11 +49,18 @@
             <div class="row mb-5">
                 @if (recips != null)
                     {
-                        foreach (Recip item in recips)
+                        foreach (Recipe item in recips)
                         {
                         <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                             <div class="card card-inverse card-info">
-                                <img class="card-img-top" src=@path2>
+                                @if (item.image != null)
+                                {
+                                    <img class="card-img-top" src=@item.image>
+                                }
+                                else
+                                {
+                                    <img class="card-img-top" src=@path2>
+                                }
                                 <div class="card-block">
                                     <figure class="profile">
                                         <img src=@path2 class="profile-avatar" alt="">
@@ -61,19 +68,17 @@
                                     <h6 class="card-title mt-3">Ad Soyad</h6>
                                     <div class="meta card-text">
                                         <h4>
-                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe">Yemek Adı</a>
-                                            
+                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe" asp-route-detailId="@item.id">@item.name</a>
+
                                         </h4>
                                     </div>
                                     <div class="card-text">
-                                        Tawshif is a web designer living in Bangladesh.
-                                        Tawshif is a web designer living in Bangladesh.
-                                        Tawshif is a web designer living in Bangladesh.
-                                        Tawshif is a web designer living in Bangladesh.
+                                        <h5>İçindekiler:</h5>
+                                        @item.ingredients
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <small>Last updated 3 mins ago</small>
+                                    <small>@item.date</small>
 
                                 </div>
                                 <asp:Button ID="Button1" runat="server" Text="Sayfaya Git" OnClick="Button1_Click" />
