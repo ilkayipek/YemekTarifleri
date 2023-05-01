@@ -10,7 +10,7 @@ namespace YemekTarifleri.DataBase
     {
         public DbSet<Category> categories { get; set; }
         public DbSet<User> users { get; set; }
-        public DbSet<Recipe> recips { get; set; }
+        public DbSet<Recipe> recipes { get; set; }
         public DbSet<Comment> comments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

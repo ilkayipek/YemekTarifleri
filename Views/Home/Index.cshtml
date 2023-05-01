@@ -1,9 +1,11 @@
 ﻿@{
-    
+
     var path1 = "Image/roma.jpg";
     var path2 = "Image/avatar.jpg";
 
-    var recips = ViewBag.Recipes;
+
+    var recipesWithUsers = ViewBag.RecipesWithUsers;
+    Recipe isMealOfDay = ViewBag.IsMealOfDay; ;
 }
 
 
@@ -11,30 +13,36 @@
 <div class="container">
 
     <!-- Portfolio Item Heading -->
-    <h1 class="my-4">
-        Günün :
-    </h1>
+    @if (isMealOfDay != null)
+        {
+        <div style="text-align:center">
+            <h1 class="my-4">
+                Günün Yemeği 
+            </h1>
 
-    <!-- Portfolio Item Row -->
-    <div class="row">
+            <!-- Portfolio Item Row -->
+            <div class="row">
 
-        <div class="col-md-8">
-            <img class="img-fluid" src=@path1 alt="" style="height: 300px;">
+                <div class="col-md-8">
+                    <img class="img-fluid" src=@isMealOfDay.image alt="" style="height: 300px;width:auto;border-radius:3%">
+                </div>
+
+                <div class="col-md-4">
+                    <h2 class="my-3">@isMealOfDay.name</h2>
+                    <h4 class="my-3">İçindekiler</h4>
+                    <ul>
+                        <li>@isMealOfDay.ingredients</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
+        }
+        else {
+            <h1>Günün Yemeği Belirlenmedi</h1>
+        }
+   
 
-        <div class="col-md-4">
-            <h3 class="my-3">Yemek Adı</h3>
-            <p>Bu tarif 4 kişiliktir.</p>
-            <h3 class="my-3">İçindekiler</h3>
-            <ul>
-                <li>Domates</li>
-                <li>Soğan</li>
-                <li>Et</li>
-                <li>Patates</li>
-            </ul>
-        </div>
-
-    </div>
     <!-- /.row -->
     <!-- Related Projects Row -->
     <!-- Page Content -->
@@ -47,10 +55,10 @@
 
         <div class="row">
             <div class="row mb-5">
-                @if (recips != null)
+                @if (recipesWithUsers != null)
+                {
+                    foreach (Recipe item in recipesWithUsers)
                     {
-                        foreach (Recipe item in recips)
-                        {
                         <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                             <div class="card card-inverse card-info">
                                 @if (item.image != null)
@@ -63,17 +71,25 @@
                                 }
                                 <div class="card-block">
                                     <figure class="profile">
-                                        <img src=@path2 class="profile-avatar" alt="">
+                                        @if (item.user != null)
+                                        {
+                                            <img src=@item.user.avatar class="profile-avatar" alt="">
+                                        }
+                                        else
+                                        {
+                                            <img src=@path2 class="profile-avatar" alt="">
+                                        }
+
                                     </figure>
-                                    <h6 class="card-title mt-3">Ad Soyad</h6>
-                                    <div class="meta card-text">
+                                    <h6 class="card-title mt-3">@item.user?.nameAndSurname</h6>
+                                    <div>
                                         <h4>
-                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe" asp-route-detailId="@item.id">@item.name</a>
+                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe" asp-route-detailId="@item.id" style="text-decoration:none;color:#305D90">@item.name</a>
 
                                         </h4>
                                     </div>
                                     <div class="card-text">
-                                        <h5>İçindekiler:</h5>
+                                        <h6 >İçindekiler:</h6>
                                         @item.ingredients
                                     </div>
                                 </div>
@@ -84,11 +100,12 @@
                                 <asp:Button ID="Button1" runat="server" Text="Sayfaya Git" OnClick="Button1_Click" />
                             </div>
                         </div>
-                        }
                     }
-                    else {
-                        <h1>Tarif Eklenmedi</h1>
-                    }
+                }
+                else
+                {
+                    <h1>Tarif Eklenmedi</h1>
+                }
             </div>
 
         </div>

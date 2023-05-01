@@ -18,7 +18,7 @@ namespace YemekTarifleri.Controllers
             ViewBag.DetailId = detailId;
             using (var context = new ApplicationConnectionDb())
             {
-                var recipe = context.recips.FirstOrDefault(x => x.id == detailId);
+                var recipe = context.recipes.FirstOrDefault(x => x.id == detailId);
                 ViewBag.DetailRecipe = recipe;
             }
             
