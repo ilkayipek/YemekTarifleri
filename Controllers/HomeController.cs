@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using YemekTarifleri.Models;
 using YemekTarifleri.DataBase;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace YemekTarifleri.Controllers;
 
@@ -20,7 +21,20 @@ public class HomeController : Controller
     {
         ViewBag.title = "Home Page";
         ApplicationConnectionDb db = new ApplicationConnectionDb();
-        ViewBag.Recipes = db.recips.ToList();
+
+        List<Recipe> recipesWithUsers = db.recipes
+    .Include(r => r.user) // Kullanıcı bilgilerini ekleyin
+    .ToList();
+
+        ViewBag.RecipesWithUsers = recipesWithUsers;
+
+        Recipe? mealOfTheDayRecipe = db.recipes
+    .FirstOrDefault(r => r.isMealOfDay == true);
+
+
+        ViewBag.IsMealOfDay = mealOfTheDayRecipe;
+
+        
         return View();
     }
 
