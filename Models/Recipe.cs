@@ -27,6 +27,8 @@ namespace YemekTarifleri.Models
         public int? userId { get; set; }
         [Column("gununYemegimi")]
         public bool? isMealOfDay { get; set; }
+
+        public User? user { get; set; }
     }
 }
 
