@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/Image/avatar.jpg"
     },
     {
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/patatesli-tavuk-yahnisi.jpg",
+      "PackagePath": "staticwebassets/Image/patatesli-tavuk-yahnisi.jpg"
+    },
+    {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/roma.jpg",
       "PackagePath": "staticwebassets/Image/roma.jpg"
     },
