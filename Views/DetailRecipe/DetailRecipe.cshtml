@@ -1,21 +1,29 @@
 ﻿
 @{
     ViewData["Title"] = "Tarif Detay";
-    Recipe recipe = ViewBag.DetailRecipe;
+    Recipe recipe = ViewBag.RecipeWithUser;
+    var userNameAndSurname = "name And Surname";
+    var userName = "username";
+    var avatarPath = "https://dummyimage.com/50x50/ced4da/6c757d.jpg";
+    if (recipe.user != null) {
+        userNameAndSurname = recipe.user.nameAndSurname;
+        userName = recipe.user.userName;
+        avatarPath = recipe.user.avatar;
+    }
+
 }
 @if (recipe != null)
     {
     <main class="flex-shrink-0">
-        <!-- Page Content-->
         <section class="py-5">
             <div class="container px-5 my-5">
                 <div class="row gx-5">
                     <div class="col-lg-3">
                         <div class="d-flex align-items-center mt-lg-5 mb-4">
-                        <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." />
+                            <img class="img-fluid rounded-circle" style="max-width:150px" src=@avatarPath alt="..." />
                             <div class="ms-3">
-                                <div class="fw-bold">Valerie Luna</div>
-                                <div class="text-muted">News, Business</div>
+                                <div class="fw-bold">@userNameAndSurname</div>
+                                <div class="text-muted">@userName</div>
                             </div>
                         </div>
                     </div>
@@ -41,29 +49,98 @@
                             {
                                 <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
                             }
-                            
+
                             <!-- Post content-->
-                        <section class="mb-5">
-                            <h2 class="fw-bolder mb-4 mt-5">İçindekiler:</h2>
-                            @if (recipe.ingredients != null)
-                            {
-                                <p class="fs-5 mb-4">@recipe.ingredients</p>
-                            }
-                            else
-                            {
-                                <p class="fs-5 mb-4">İçindekiler Girilmedi</p>
-                            }
-                            <h2 class="fw-bolder mb-4 mt-5">@recipe.name Nasıl Yapılır?</h2>
-                            @if (recipe.cooking != null)
-                            {
-                                <p class="fs-5 mb-4">@recipe.cooking</p>
-                            }
-                            else
-                            {
-                                <p class="fs-5 mb-4">Tarifin Yapılışı paylaşılmadı</p>
-                            }
-                        </section>
+                            <section class="mb-5">
+                                <h2 class="fw-bolder mb-4 mt-5">İçindekiler:</h2>
+                                @if (recipe.ingredients != null)
+                                {
+                                    <p class="fs-5 mb-4">@recipe.ingredients</p>
+                                }
+                                else
+                                {
+                                    <p class="fs-5 mb-4">İçindekiler Girilmedi</p>
+                                }
+                                <h2 class="fw-bolder mb-4 mt-5">@recipe.name Nasıl Yapılır?</h2>
+                                @if (recipe.cooking != null)
+                                {
+                                    <p class="fs-5 mb-4">@recipe.cooking</p>
+                                }
+                                else
+                                {
+                                    <p class="fs-5 mb-4">Tarifin Yapılışı paylaşılmadı</p>
+                                }
+                            </section>
                         </article>
+                        <div class="card">
+
+                            <div class="row">
+
+                                <div class="col-2">
+
+
+                                    <img src="https://i.imgur.com/xELPaag.jpg" width="70" class="rounded-circle mt-2">
+
+
+                                </div>
+
+                                <div class="col-10">
+
+                                    <div class="comment-box ml-2">
+
+                                        <h4>Add a comment</h4>
+
+                                        <div class="rating">
+                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                        </div>
+
+                                        <div class="comment-area">
+
+                                            <textarea class="form-control" placeholder="what is your view?" rows="4"></textarea>
+
+                                        </div>
+
+                                        <div class="comment-btns mt-2">
+
+                                            <div class="row">
+
+                                                <div class="col-6">
+
+                                                    <div class="pull-left">
+
+                                                        <button class="btn btn-success btn-sm">Cancel</button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-6">
+
+                                                    <div class="pull-right">
+
+                                                        <button class="btn btn-success send btn-sm">Send <i class="fa fa-long-arrow-right ml-1"></i></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
                         <!-- Comments section-->
                         <section>
                             <div class="card bg-light">
@@ -96,13 +173,17 @@
                                         </div>
                                     </div>
                                     <!-- Single comment-->
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                        <div class="ms-3">
-                                            <div class="fw-bold">Commenter Name</div>
-                                            When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+                                    @for (var i = 0; i < 10; i++)
+                                    {
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                            <div class="ms-3">
+                                                <div class="fw-bold">Commenter Name</div>
+                                                When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+                                            </div>
                                         </div>
-                                    </div>
+                                    }
+
                                 </div>
                             </div>
                         </section>

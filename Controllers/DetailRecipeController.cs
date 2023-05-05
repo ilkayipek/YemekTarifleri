@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YemekTarifleri.DataBase;
+using YemekTarifleri.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,13 +16,14 @@ namespace YemekTarifleri.Controllers
         // GET: /<controller>/
         public IActionResult DetailRecipe(int detailId)
         {
+            ApplicationConnectionDb db = new ApplicationConnectionDb();
+
             ViewBag.DetailId = detailId;
-            using (var context = new ApplicationConnectionDb())
-            {
-                var recipe = context.recipes.FirstOrDefault(x => x.id == detailId);
-                ViewBag.DetailRecipe = recipe;
-            }
-            
+            var recipeWithUser = db.recipes
+    .Include(r => r.user) // Kullanıcı bilgilerini ekleyin
+    .FirstOrDefault(r => r.id == detailId); // Tarif Id'sine göre filtreleyin
+
+            ViewBag.RecipeWithUser = recipeWithUser;
             return View();
         }
     }
