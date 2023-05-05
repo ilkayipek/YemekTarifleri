@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/css/RecipeCollection.css"
     },
     {
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/comment.css",
+      "PackagePath": "staticwebassets/css/comment.css"
+    },
+    {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/search.css",
       "PackagePath": "staticwebassets/css/search.css"
     },
