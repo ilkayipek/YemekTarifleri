@@ -1,0 +1,63 @@
+﻿@{
+    var result = ViewBag.SearchResults;
+    var defaultAvatarPath = "Image/avatar.jpg";
+}
+
+<div class="row">
+
+    <div class="row mb-5">
+        @if (result != null)
+            {
+            <h1 class="my-4" style="font-family: 'Comic Sans MS', cursive, sans-serif">
+                (@result.Count) sonuç bulundu
+            </h1>
+                foreach (Recipe item in result)
+                {
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                    <div class="card card-inverse card-info">
+                        @if (item.image != null)
+                            {
+                            <img class="card-img-top" src=@item.image>
+                            }
+                            else
+                            {
+                            <img class="card-img-top" src=@defaultAvatarPath>
+                            }
+                        <div class="card-block">
+                            <figure class="profile">
+                                @if (item.user != null)
+                                    {
+                                    <img src=@item.user.avatar class="profile-avatar" alt="">
+                                    }
+                                    else
+                                    {
+                                    <img src=@defaultAvatarPath class="profile-avatar" alt="">
+                                    }
+
+                            </figure>
+                            <h6 class="card-title mt-3">@item.user?.nameAndSurname</h6>
+                            <div>
+                                <h4>
+                                    <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe" asp-route-detailId="@item.id" style="text-decoration:none;color:#305D90">@item.name</a>
+
+                                </h4>
+                            </div>
+                            <div class="card-text">
+                                <h6>İçindekiler:</h6>
+                                @item.ingredients
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>@item.date</small>
+
+                        </div>
+                        <asp:Button ID="Button1" runat="server" Text="Sayfaya Git" OnClick="Button1_Click" />
+                    </div>
+                </div>
+                }
+            }
+            else {
+                <h1>Aradığınız sonuç bulunamadı!</h1>
+            }
+    </div>
+</div>

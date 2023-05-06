@@ -13,6 +13,7 @@
     <None Remove="DataBase\" />
     <None Remove="ViewComponents\" />
     <None Remove="Views\Privacy\" />
+    <None Remove="Views\Search\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\DetailRecipe\" />
@@ -21,6 +22,7 @@
     <Folder Include="DataBase\" />
     <Folder Include="ViewComponents\" />
     <Folder Include="Views\Privacy\" />
+    <Folder Include="Views\Search\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Content\images\gorselsec.png" />
