@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UnnQ/6t9wqaDYog+8IWzH88SKfWipN4feI2AH5uiYsM=",
+  "Hash": "7CsLDxB7CDR5SQkxk35ZXdLzhRNJytlm/tyxwSUrJc8=",
   "Source": "YemekTarifleri",
   "BasePath": "_content/YemekTarifleri",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/scopedcss/projectbundle/YemekTarifleri.bundle.scp.css"
-    },
-    {
-      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/comment.css",
-      "SourceId": "YemekTarifleri",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
-      "BasePath": "_content/YemekTarifleri",
-      "RelativePath": "css/comment.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/comment.css"
     },
     {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",
