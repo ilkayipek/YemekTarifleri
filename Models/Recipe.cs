@@ -29,6 +29,7 @@ namespace YemekTarifleri.Models
         public bool? isMealOfDay { get; set; }
 
         public User? user { get; set; }
+        public Category? category { get; set; }
     }
 }
 
