@@ -54,16 +54,19 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="custom-search-input ">
-                    <div class="input-group">
-                        <input type="text" class="search-query form-control" placeholder="Search" />
-                        <span class="input-group-btn">
-                            <button type="button">
-                                <span class="fa fa-search"></span>
-                            </button>
-                        </span>
+                <form method="post" action="/Search/Search">
+                    <div class="custom-search-input">
+                        <div class="input-group">
+                            <input type="text" class="search-query form-control" placeholder="Search" name="searchInput" />
+                            <span class="input-group-btn">
+                                <button type="submit">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </form>
+
             </div>
 
             <div class="col-lg-4"></div>
