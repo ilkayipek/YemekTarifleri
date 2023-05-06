@@ -42,10 +42,11 @@
         border-radius: 3px;
         color: blue;
         cursor: unset;
-        z-index: 2;
+        z-index: 3;
         
     }
 
 .search-query:focus {
     z-index: initial;
 }
+
