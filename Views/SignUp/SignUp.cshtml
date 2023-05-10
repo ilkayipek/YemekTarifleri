@@ -1,0 +1,88 @@
+﻿@page
+@{
+
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card bg-light border-0 shadow-lg rounded-3">
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <h3 class="text-uppercase mb-0">Sign Up</h3>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form1Example1" class="form-control form-control-lg" placeholder="First name" required />
+                                    <label class="form-label visually-hidden" for="form1Example1">First name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form1Example2" class="form-control form-control-lg" placeholder="Last name" required />
+                                    <label class="form-label visually-hidden" for="form1Example2">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="email" id
+                                   form1Example3" class="form-control form-control-lg" placeholder="Email address" required />
+                            <label class="form-label visually-hidden" for="form1Example3">Email address</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="form1Example4" class="form-control form-control-lg" placeholder="Password" required />
+                                    <label class="form-label visually-hidden" for="form1Example4">Password</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="form1Example5" class="form-control form-control-lg" placeholder="Confirm Password" required />
+                                    <label class="form-label visually-hidden" for="form1Example5">Confirm Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form1Example6" class="form-control form-control-lg" placeholder="Address" required />
+                            <label class="form-label visually-hidden" for="form1Example6">Address</label>
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form1Example7" class="form-control form-control-lg" placeholder="City" required />
+                            <label class="form-label visually-hidden" for="form1Example7">City</label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form1Example8" class="form-control form-control-lg" placeholder="State" required />
+                                    <label class="form-label visually-hidden" for="form1Example8">State</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form1Example9" class="form-control form-control-lg" placeholder="Zip Code" required />
+                                    <label class="form-label visually-hidden" for="form1Example9">Zip Code</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="form1Example10" checked required />
+                            <label class="form-check-label" for="form1Example10">
+                                I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <p class="mb-0">Already have an account? <a class="text-primary" asp-area="" asp-controller="SignIn" asp-action="SignIn">Sign in</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
