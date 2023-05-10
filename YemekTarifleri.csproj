@@ -14,6 +14,8 @@
     <None Remove="ViewComponents\" />
     <None Remove="Views\Privacy\" />
     <None Remove="Views\Search\" />
+    <None Remove="Views\SignIn\" />
+    <None Remove="Views\SignUp\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\DetailRecipe\" />
@@ -23,6 +25,8 @@
     <Folder Include="ViewComponents\" />
     <Folder Include="Views\Privacy\" />
     <Folder Include="Views\Search\" />
+    <Folder Include="Views\SignIn\" />
+    <Folder Include="Views\SignUp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Content\images\gorselsec.png" />
