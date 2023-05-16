@@ -17,6 +17,18 @@ body {
     margin-bottom: 60px;
 }
 
-header {
-    background: linear-gradient(to right, rgb(239, 239, 187), rgb(212, 211, 221));
+.base-header {
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(76, 161, 175));
+}
+
+.default-background-color {
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(76, 161, 175));
+}
+
+.logo-text {
+    background-image: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Luminari', fantasy;
+    font-size:25px;
 }

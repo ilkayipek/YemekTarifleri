@@ -16,14 +16,20 @@
     <link rel="stylesheet" href="~/YemekTarifleri.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/RecipeCollection.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/css/search.css" asp-append-version="true" />
-
+    <link rel="stylesheet" href="~/css/Search.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Comment.css" asp-append-version="true" />
+    <style>
+        .navbar-light .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 row">
+    <header class="base-header">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-dark border-bottom box-shadow mb-3 row">
             <div class="container-fluid col-lg-4">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="font-family: 'Luminari', fantasy;">YemekTarifleri</a>
+                <a class="navbar-brand logo-text" asp-area="" asp-controller="Home" asp-action="Index">YemekTarifleri</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,7 +58,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3" style="text-align:center">
                 <form method="post" action="/Search/Search">
                     <div class="custom-search-input">
                         <div class="input-group">
