@@ -1,0 +1,224 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+
+.comment-body {
+    display: grid;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    width:100%;
+}
+
+.comment-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 20px;
+    
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 6px;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1)
+}
+
+.comment-box {
+    padding: 5px;
+}
+
+
+
+.comment-area textarea {
+    resize: none;
+    border: 1px solid #ad9f9f;
+}
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgb(255, 0, 0) !important;
+}
+
+.send {
+    color: #fff;
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(76, 161, 175));
+    border-color: blue;
+}
+
+    .send:hover {
+        color: #fff;
+        background-color: #f50202;
+        border-color: black;
+    }
+
+
+.rating {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+    float: left;
+}
+
+    .rating > input {
+        display: none
+    }
+
+    .rating > label {
+        position: relative;
+        width: 19px;
+        font-size: 25px;
+        color: #ff0000;
+        cursor: pointer;
+    }
+
+        .rating > label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0
+        }
+
+        .rating > label:hover:before,
+        .rating > label:hover ~ label:before {
+            opacity: 1 !important
+        }
+
+    .rating > input:checked ~ label:before {
+        opacity: 1
+    }
+
+    .rating:hover > input:checked ~ label:before {
+        opacity: 0.4
+    }
+
+
+
+
+
+
+
+.commenst-body {
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rating-box {
+    width: 130px;
+    height: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FBC02D;
+    color: #fff;
+}
+
+.rating-label {
+    font-weight: bold;
+}
+
+/* Rating bar width */
+.rating-bar {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 70%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px;
+}
+
+.bar-3 {
+    width: 20%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px;
+}
+
+.bar-2 {
+    width: 10%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px;
+}
+
+.bar-1 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px;
+}
+
+td {
+    padding-bottom: 10px;
+}
+
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .star-active:hover {
+        color: #F9A825;
+        cursor: pointer;
+    }
+
+.star-inactive {
+    color: #CFD8DC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blue-text {
+    color: #0091EA;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.pic {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.vote {
+    cursor: pointer;
+}

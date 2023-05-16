@@ -70,116 +70,185 @@
                                 }
                             </section>
                         </article>
-                        <div class="card">
-
-                            <div class="row">
-
-                                <div class="col-2">
-
-
-                                    <img src=@avatarPath width="70" class="rounded-circle mt-2">
-
-
-                                </div>
-
-                                <div class="col-10">
-
-                                    <div class="comment-box ml-2">
-
-                                        <h4>Add a comment</h4>
-
-                                        <div class="rating">
-                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                                        </div>
-
-                                        <div class="comment-area">
-
-                                            <textarea class="form-control" placeholder="what is your view?" rows="4"></textarea>
-
-                                        </div>
-
-                                        <div class="comment-btns mt-2">
-
-                                            <div class="row">
-
-                                                <div class="col-6">
-
-                                                    <div class="pull-left">
-
-                                                        <button class="btn btn-success btn-sm">Cancel</button>
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="col-6">
-
-                                                    <div class="pull-right">
-
-                                                        <button class="btn btn-success send btn-sm">Send <i class="fa fa-long-arrow-right ml-1"></i></button>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <!-- Comments section-->
+                        
+                       
                         <section>
                             <div class="card bg-light">
-                                <div class="card-body">
-                                    <!-- Comment form-->
-                                    <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
-                                    <!-- Comment with nested comments-->
-                                    <div class="d-flex mb-4">
-                                        <!-- Parent comment-->
-                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                        <div class="ms-3">
-                                            <div class="fw-bold">Commenter Name</div>
-                                            If you're going to lead a space frontier, it has to be government; it'll never be private enterprise. Because the space frontier is dangerous, and it's expensive, and it has unquantified risks.
-                                            <!-- Child comment 1-->
-                                            <div class="d-flex mt-4">
-                                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                                <div class="ms-3">
-                                                    <div class="fw-bold">Commenter Name</div>
-                                                    And under those conditions, you cannot establish a capital-market evaluation of that enterprise. You can't get investors.
-                                                </div>
-                                            </div>
-                                            <!-- Child comment 2-->
-                                            <div class="d-flex mt-4">
-                                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                                <div class="ms-3">
-                                                    <div class="fw-bold">Commenter Name</div>
-                                                    When you put money directly to a problem, it makes a good headline.
-                                                </div>
-                                            </div>
+                                <div class="comment-card comment-body">
+
+                                    <div class="row">
+
+                                        <div class="col-1">
+
+
+                                            <img src="https://i.imgur.com/xELPaag.jpg" width="70" class="rounded-circle mt-2">
+
+
                                         </div>
+
+                                        <div class="col-9">
+
+                                            <div class="comment-box ml-2">
+
+                                                <h4>Yorum yap</h4>
+
+                                                <div class="rating">
+                                                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                                </div>
+
+                                                <div class="comment-area">
+
+                                                    <textarea class="form-control" placeholder="Yemek hakkındaki düşüncelerin?" rows="4"></textarea>
+
+                                                </div>
+
+                                                <div class="comment-btns mt-2">
+
+                                                    <div class="row">
+                                                        <div class="col-15">
+                                     
+                                                            <div class="pull-right" style="text-align:right">
+
+                                                                <button class="btn btn-success send btn-sm">Paylaş <i class="fa fa-long-arrow-right ml-1"></i></button>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+
                                     </div>
-                                    <!-- Single comment-->
-                                    <div class="d-flex">
-                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
-                                        <div class="ms-3">
-                                            <div class="fw-bold">Commenter Name</div>
-                                            When I look at the universe and all the ways the universe wants to kill us, I find it hard to reconcile that with statements of beneficence.
+
+                                </div>
+                                <div class="comments-body">
+                                    <div class="container-fluid px-1 py-5 mx-auto">
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
+                                                <div class="card">
+                                                    <div class="row justify-content-left d-flex">
+                                                        <div class="col-md-4 d-flex flex-column">
+                                                            <div class="rating-box">
+                                                                <h1 class="pt-4">4.0</h1>
+                                                                <p class="">out of 5</p>
+                                                            </div>
+                                                            <div>
+                                                                <span class="fa fa-star star-active mx-1"></span>
+                                                                <span class="fa fa-star star-active mx-1"></span>
+                                                                <span class="fa fa-star star-active mx-1"></span>
+                                                                <span class="fa fa-star star-active mx-1"></span>
+                                                                <span class="fa fa-star star-inactive mx-1"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="rating-bar0 justify-content-center">
+                                                                <table class="text-left mx-auto">
+                                                                    <tr>
+                                                                        <td class="rating-label">Excellent</td>
+                                                                        <td class="rating-bar">
+                                                                            <div class="bar-container">
+                                                                                <div class="bar-5"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">123</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="rating-label">Good</td>
+                                                                        <td class="rating-bar">
+                                                                            <div class="bar-container">
+                                                                                <div class="bar-4"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">23</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="rating-label">Average</td>
+                                                                        <td class="rating-bar">
+                                                                            <div class="bar-container">
+                                                                                <div class="bar-3"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="rating-label">Poor</td>
+                                                                        <td class="rating-bar">
+                                                                            <div class="bar-container">
+                                                                                <div class="bar-2"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">3</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="rating-label">Terrible</td>
+                                                                        <td class="rating-bar">
+                                                                            <div class="bar-container">
+                                                                                <div class="bar-1"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">0</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="row d-flex">
+                                                        <div class="">
+                                                            <img class="profile-pic" src="https://i.imgur.com/V3ICjlm.jpg">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h3 class="mt-2 mb-0">Vikram jit Singh</h3>
+                                                            <div>
+                                                                <p class="text-left">
+                                                                    <span class="text-muted">4.0</span>
+                                                                    <span class="fa fa-star star-active ml-3"></span>
+                                                                    <span class="fa fa-star star-active"></span>
+                                                                    <span class="fa fa-star star-active"></span>
+                                                                    <span class="fa fa-star star-active"></span>
+                                                                    <span class="fa fa-star star-inactive"></span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ml-auto">
+                                                            <p class="text-muted pt-5 pt-sm-3">10 Sept</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row text-left">
+                                                        <h4 class="blue-text mt-3">"An awesome activity to experience"</h4>
+                                                        <p class="content">If you really enjoy spending your vacation 'on water' or would like to try something new and exciting for the first time.</p>
+                                                    </div>
+                                                    <div class="row text-left">
+                                                        <img class="pic" src="https://i.imgur.com/kjcZcfv.jpg">
+                                                        <img class="pic" src="https://i.imgur.com/SjBwAgs.jpg">
+                                                        <img class="pic" src="https://i.imgur.com/IgHpsBh.jpg">
+                                                    </div>
+                                                    <div class="row text-left mt-4">
+                                                        <div class="like mr-3 vote">
+                                                            <img src="https://i.imgur.com/mHSQOaX.png"><span class="blue-text pl-2">20</span>
+                                                        </div>
+                                                        <div class="unlike vote">
+                                                            <img src="https://i.imgur.com/bFBO3J7.png"><span class="text-muted pl-2">4</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
                         </section>
                     </div>
                 </div>
