@@ -17,12 +17,16 @@
       "PackagePath": "staticwebassets/Image/roma.jpg"
     },
     {
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/Comment.css",
+      "PackagePath": "staticwebassets/css/Comment.css"
+    },
+    {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",
       "PackagePath": "staticwebassets/css/RecipeCollection.css"
     },
     {
-      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/search.css",
-      "PackagePath": "staticwebassets/css/search.css"
+      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/Search.css",
+      "PackagePath": "staticwebassets/css/Search.css"
     },
     {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/site.css",
