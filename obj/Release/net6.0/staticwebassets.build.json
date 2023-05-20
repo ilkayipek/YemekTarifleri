@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pfAIQk6Pyn59QYyLW4L3ONTJ5R/FcnOJiocnvxj/LS0=",
+  "Hash": "FmpTvoXEU/HHa7WeSR+PHowga4Md+JuQylvy/TPv6hA=",
   "Source": "YemekTarifleri",
   "BasePath": "_content/YemekTarifleri",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/Comment.css"
+    },
+    {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/LayoutAccount.css",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": "css/LayoutAccount.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/LayoutAccount.css"
     },
     {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",
