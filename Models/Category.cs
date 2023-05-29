@@ -15,5 +15,7 @@ namespace YemekTarifleri.Models
         public int? piece { get; set; }
         [Column("kategoriResim")]
         public String? image { get; set; }
+
+        public List<Recipe>? recipes { get; set; }
     }
 }
