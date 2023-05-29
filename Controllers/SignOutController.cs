@@ -11,7 +11,7 @@ namespace YemekTarifleri.Controllers
     public class SignOutController : Controller
     {
         // GET: /<controller>/
-        public IActionResult SignOut()
+        public IActionResult signOut()
         {
             // Kullanıcının oturumunu sonlandırmak için ilgili cookie'yi siler
             Response.Cookies.Delete("userId");
