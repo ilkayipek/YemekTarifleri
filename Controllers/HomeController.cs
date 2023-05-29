@@ -4,9 +4,12 @@ using YemekTarifleri.Models;
 using YemekTarifleri.DataBase;
 using Microsoft.EntityFrameworkCore;
 using System;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 namespace YemekTarifleri.Controllers;
 
+[AllowAnonymous]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -34,7 +37,15 @@ public class HomeController : Controller
 
         ViewBag.IsMealOfDay = mealOfTheDayRecipe;
 
-        
+        //HttpContext.Request.Cookies.TryGetValue("userId",out string? userId);
+        string? userId = HttpContext.Request.Cookies["userId"];
+        _logger.LogInformation($"userId: {userId}");
+
+       if (userId != null) {
+                User? user = db.users.FirstOrDefault(u => (u.id == int.Parse(userId)));
+            UserInfo.setUser(user);
+        }
+
         return View();
     }
 
