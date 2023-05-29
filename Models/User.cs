@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
 
 namespace YemekTarifleri.Models
 {
     [Table("Tbl_Kullanicilar")]
-    public class User
+    public class User 
     {
         [Key]
         [Column("kullaniciId")]
@@ -21,5 +22,8 @@ namespace YemekTarifleri.Models
         public Boolean? userType { get; set; }
         [Column("kullaniciAvatar")]
         public String? avatar { get; set; }
+
+        public List<Recipe> recipes { get; set; }
+        public List<Comment>? comments { get; set; }
     }
 }
