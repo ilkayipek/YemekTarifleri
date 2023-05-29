@@ -24,12 +24,13 @@ namespace YemekTarifleri.Models
         [Column("kategoriId")]
         public int? categoryId { get; set; }
         [Column("kullaniciId")]
-        public int? userId { get; set; }
+        public int? UserId { get; set; }
         [Column("gununYemegimi")]
         public bool? isMealOfDay { get; set; }
 
         public User? user { get; set; }
         public Category? category { get; set; }
+        public List<Comment>? comments { get; set; }
     }
 }
 
