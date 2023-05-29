@@ -1,7 +1,17 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using YemekTarifleri.DataBase;
+using YemekTarifleri.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add(typeof(SessionFilter));
+});
+
 
 var app = builder.Build();
 
