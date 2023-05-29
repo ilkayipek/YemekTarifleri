@@ -3,7 +3,7 @@
 @{
     ApplicationConnectionDb db = new ApplicationConnectionDb();
     var categories = db.categories.ToList();
-    bool accountStatus = false;
+    bool isUserLoggedIn = Context.Request.Cookies.ContainsKey("userId");
 }
 
 <!DOCTYPE html>
@@ -74,7 +74,7 @@
 
             </div>
 
-            @if (accountStatus)
+            @if (isUserLoggedIn)
             {
                     <div class="col-lg-4">
                         <div class="row justify-content-end">
@@ -100,7 +100,7 @@
                                         <li><a class="dropdown-item" href="#">Tarif Paylaş</a></li>
                                         <li><a class="dropdown-item" href="#">Ayarlar</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Çıkış yap</a></li>
+                                        <li><a class="dropdown-item" asp-controller="SignOut" asp-action="SignOut">Çıkış yap</a></li>
                                     </ul>
                                 </div>
                             </div>
