@@ -1,6 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using YemekTarifleri.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 //using Microsoft.Extensions.Logging;
 
 
@@ -23,5 +26,6 @@ namespace YemekTarifleri.DataBase
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors();
         }
+
     }
 }
