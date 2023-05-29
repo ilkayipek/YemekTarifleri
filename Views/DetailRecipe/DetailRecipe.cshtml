@@ -1,4 +1,4 @@
-﻿
+﻿@using YemekTarifleri.Controllers;
 @{
     ViewData["Title"] = "Tarif Detay";
     Recipe recipe = ViewBag.RecipeWithUser;
@@ -11,7 +11,21 @@
         userName = recipe.user.userName;
         avatarPath = recipe.user.avatar;
     }
+    User? currentUser = UserInfo.getUser();
+    List<Comment>? comments = ViewBag.CommentsWithUsers;
 
+    double totalstar = 0;
+
+    foreach (var comment in comments)
+    {
+        totalstar += (comment.point ?? 0);
+    }
+
+    var averagePoint = totalstar / comments.Count;
+
+
+    var modelState = ViewData.ModelState;
+    var clientValidationEnabled = ViewContext.ClientValidationEnabled;
 }
 @if (recipe != null)
     {
@@ -35,6 +49,16 @@
                             <header class="mb-4">
                                 <!-- Post title-->
                                 <h1 class="fw-bolder mb-1">@recipe.name</h1>
+                                <div>
+                                    @for (var i = 0; i < averagePoint; i++)
+                                    {
+                                        <span class="fa fa-star star-active mx-1"></span>
+                                    }
+                                    @for (var i = 0; i < 5 - averagePoint; i++)
+                                    {
+                                        <span class="fa fa-star star-inactive mx-1"></span>
+                                    }
+                                </div>
                                 <!-- Post meta content-->
                                 <div class="text-muted fst-italic mb-2">@recipe.date</div>
                             </header>
@@ -70,54 +94,67 @@
                                 }
                             </section>
                         </article>
-                        
-                       
+
+
                         <section>
                             <div class="card bg-light">
-                                <div class="comment-card comment-body">
+                                @if (currentUser != null)
+                                {
+                                    <form action="/DetailRecipe/postComment" method="post">
+                                        @if (!modelState.IsValid && clientValidationEnabled)
+                                        {
+                                            <div class="text-danger">
+                                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                            </div>
+                                        }
+                                        <div class="comment-card comment-body">
 
-                                    <div class="row">
+                                            <div class="row">
 
-                                        <div class="col-1">
+                                                <div class="col-1">
 
-
-                                            <img src="https://i.imgur.com/xELPaag.jpg" width="70" class="rounded-circle mt-2">
-
-
-                                        </div>
-
-                                        <div class="col-9">
-
-                                            <div class="comment-box ml-2">
-
-                                                <h4>Yorum yap</h4>
-
-                                                <div class="rating">
-                                                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                                                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                                                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                                                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                                                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                                                </div>
-
-                                                <div class="comment-area">
-
-                                                    <textarea class="form-control" placeholder="Yemek hakkındaki düşüncelerin?" rows="4"></textarea>
+                                                    <img src="@currentUser?.avatar" width="70" class="rounded-circle mt-2">
 
                                                 </div>
 
-                                                <div class="comment-btns mt-2">
+                                                <div class="col-9">
 
-                                                    <div class="row">
-                                                        <div class="col-15">
-                                     
-                                                            <div class="pull-right" style="text-align:right">
+                                                    <div class="comment-box ml-2">
 
-                                                                <button class="btn btn-success send btn-sm">Paylaş <i class="fa fa-long-arrow-right ml-1"></i></button>
+                                                        <h4>@currentUser?.nameAndSurname</h4>
+
+                                                        <div class="rating">
+                                                            <input type="radio" name="point" value="5" id="5"><label for="5">☆</label>
+                                                            <input type="radio" name="point" value="4" id="4"><label for="4">☆</label>
+                                                            <input type="radio" name="point" value="3" id="3"><label for="3">☆</label>
+                                                            <input type="radio" name="point" value="2" id="2"><label for="2">☆</label>
+                                                            <input type="radio" name="point" value="1" id="1"><label for="1">☆</label>
+                                                        </div>
+
+                                                        <div class="comment-area">
+
+                                                            <textarea class="form-control" name="contents" placeholder="Yemek hakkındaki düşüncelerin?" rows="4"></textarea>
+
+                                                        </div>
+
+                                                        <div class="comment-btns mt-2">
+
+                                                            <div class="row">
+                                                                <div class="col-15">
+
+                                                                    <div class="pull-right" style="text-align:right">
+
+                                                                        <input type="hidden" name="recipeId" value="@recipe.id" />
+                                                                        <button class="btn btn-success send btn-sm">Paylaş <i class="fa fa-long-arrow-right ml-1"></i></button>
+
+                                                                    </div>
+
+                                                                </div>
 
                                                             </div>
 
                                                         </div>
+
 
                                                     </div>
 
@@ -127,134 +164,91 @@
                                             </div>
 
                                         </div>
+                                    </form>
+
+                                        }
+                                        else
+                                        {
+                                        <h4>Yorum yapabilmek için <a asp-area="" asp-controller="SignIn" asp-action="SignIn">GİRİŞ</a> yapmalısınız.</h4>
+                                        }
+
+                                        <!--comments-->
+                                        @if (comments != null && comments.Count > 0)
+                                            {
+
+                                                <div class="container mt-5 mb-5">
+
+                                                    <div class="row height d-flex justify-content-center align-items-center">
+
+                                                        <div class="col-md-20">
+
+                                                            <div class="card-comments">
+
+                                                                <div class="mt-5">
+
+                                                                    @foreach (var comment in comments)
+                                                                    {
+                                                                        <div class="d-flex flex-row p-3">
+
+                                                                            <img src="@comment.user.avatar" width="40" height="40" class="rounded-circle mr-3">
+
+                                                                            <div class="w-100">
+
+                                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                                    <div class="d-flex flex-row align-items-center">
+                                                                                        <span class="mr-3" style="font-weight:bold ">@comment.user.nameAndSurname</span>
+                                                                                    </div>
+                                                                                    <small>@comment.date</small>
+                                                                                    <div>
+                                                                                        @for (var i = 0; i < comment.point; i++)
+                                                                                        {
+                                                                                            <span class="fa fa-star star-active mx-1"></span>
+                                                                                        }
+                                                                                        @for (var i = 0; i < 5 - comment.point; i++)
+                                                                                        {
+                                                                                            <span class="fa fa-star star-inactive mx-1"></span>
+                                                                                        }
+
+                                                                 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <p class="text-justify comment-text mb-0">@comment.contents</p>
+
+                                                                            </div>
 
 
-                                    </div>
+                                                                        </div>
+                                                                    }
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            
+
+                                        }
+                                        else
+                                        {
+                                            <h5>Bu tarife henüz yorum yapılmadı.</h5>
+                                        }
 
                                 </div>
-                                <div class="comments-body">
-                                    <div class="container-fluid px-1 py-5 mx-auto">
-                                        <div class="row justify-content-center">
-                                            <div class="col-xl-7 col-lg-8 col-md-10 col-12 text-center mb-5">
-                                                <div class="card">
-                                                    <div class="row justify-content-left d-flex">
-                                                        <div class="col-md-4 d-flex flex-column">
-                                                            <div class="rating-box">
-                                                                <h1 class="pt-4">4.0</h1>
-                                                                <p class="">out of 5</p>
-                                                            </div>
-                                                            <div>
-                                                                <span class="fa fa-star star-active mx-1"></span>
-                                                                <span class="fa fa-star star-active mx-1"></span>
-                                                                <span class="fa fa-star star-active mx-1"></span>
-                                                                <span class="fa fa-star star-active mx-1"></span>
-                                                                <span class="fa fa-star star-inactive mx-1"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <div class="rating-bar0 justify-content-center">
-                                                                <table class="text-left mx-auto">
-                                                                    <tr>
-                                                                        <td class="rating-label">Excellent</td>
-                                                                        <td class="rating-bar">
-                                                                            <div class="bar-container">
-                                                                                <div class="bar-5"></div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">123</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="rating-label">Good</td>
-                                                                        <td class="rating-bar">
-                                                                            <div class="bar-container">
-                                                                                <div class="bar-4"></div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">23</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="rating-label">Average</td>
-                                                                        <td class="rating-bar">
-                                                                            <div class="bar-container">
-                                                                                <div class="bar-3"></div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">10</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="rating-label">Poor</td>
-                                                                        <td class="rating-bar">
-                                                                            <div class="bar-container">
-                                                                                <div class="bar-2"></div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">3</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="rating-label">Terrible</td>
-                                                                        <td class="rating-bar">
-                                                                            <div class="bar-container">
-                                                                                <div class="bar-1"></div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">0</td>
-                                                                    </tr>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="row d-flex">
-                                                        <div class="">
-                                                            <img class="profile-pic" src="https://i.imgur.com/V3ICjlm.jpg">
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <h3 class="mt-2 mb-0">Vikram jit Singh</h3>
-                                                            <div>
-                                                                <p class="text-left">
-                                                                    <span class="text-muted">4.0</span>
-                                                                    <span class="fa fa-star star-active ml-3"></span>
-                                                                    <span class="fa fa-star star-active"></span>
-                                                                    <span class="fa fa-star star-active"></span>
-                                                                    <span class="fa fa-star star-active"></span>
-                                                                    <span class="fa fa-star star-inactive"></span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ml-auto">
-                                                            <p class="text-muted pt-5 pt-sm-3">10 Sept</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row text-left">
-                                                        <h4 class="blue-text mt-3">"An awesome activity to experience"</h4>
-                                                        <p class="content">If you really enjoy spending your vacation 'on water' or would like to try something new and exciting for the first time.</p>
-                                                    </div>
-                                                    <div class="row text-left">
-                                                        <img class="pic" src="https://i.imgur.com/kjcZcfv.jpg">
-                                                        <img class="pic" src="https://i.imgur.com/SjBwAgs.jpg">
-                                                        <img class="pic" src="https://i.imgur.com/IgHpsBh.jpg">
-                                                    </div>
-                                                    <div class="row text-left mt-4">
-                                                        <div class="like mr-3 vote">
-                                                            <img src="https://i.imgur.com/mHSQOaX.png"><span class="blue-text pl-2">20</span>
-                                                        </div>
-                                                        <div class="unlike vote">
-                                                            <img src="https://i.imgur.com/bFBO3J7.png"><span class="text-muted pl-2">4</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                            
                         </section>
+
                     </div>
+                   
                 </div>
             </div>
+           
         </section>
     </main>
+
     }
     else {
         <h1>Sorguda bir hata oluştu</h1>
