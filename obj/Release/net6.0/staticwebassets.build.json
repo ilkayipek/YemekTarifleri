@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FmpTvoXEU/HHa7WeSR+PHowga4Md+JuQylvy/TPv6hA=",
+  "Hash": "i7mSkDH8Vsixx25iGIkxyIjK5MydiwHjHKvdkYhhPkI=",
   "Source": "YemekTarifleri",
   "BasePath": "_content/YemekTarifleri",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/scopedcss/projectbundle/YemekTarifleri.bundle.scp.css"
     },
     {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/.DS_Store",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/Comment.css",
       "SourceId": "YemekTarifleri",
       "SourceType": "Discovered",
@@ -66,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/Comment.css"
-    },
-    {
-      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/LayoutAccount.css",
-      "SourceId": "YemekTarifleri",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
-      "BasePath": "_content/YemekTarifleri",
-      "RelativePath": "css/LayoutAccount.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/LayoutAccount.css"
     },
     {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",

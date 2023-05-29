@@ -14,11 +14,6 @@
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.MvcApplicationPartsAssemblyInfo.cache
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.RazorAssemblyInfo.cache
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/YemekTarifleri.RazorAssemblyInfo.cs
-/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets/msbuild.YemekTarifleri.Microsoft.AspNetCore.StaticWebAssets.props
-/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets/msbuild.build.YemekTarifleri.props
-/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets/msbuild.buildMultiTargeting.YemekTarifleri.props
-/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets/msbuild.buildTransitive.YemekTarifleri.props
-/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets.pack.json
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets.build.json
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/staticwebassets.development.json
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Release/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
@@ -61,3 +56,4 @@
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Newtonsoft.Json.dll
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Newtonsoft.Json.Bson.dll
 /Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/System.Security.Permissions.dll
+/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/bin/Release/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

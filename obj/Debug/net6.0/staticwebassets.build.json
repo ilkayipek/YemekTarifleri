@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5j04s06jD8GaVOfsHXkLwPbbPKIHdTbCT21T348am3I=",
+  "Hash": "qCkU70Rt8Sch+FrISgsTEU+XWhiczZES7zPxdCOv8Hw=",
   "Source": "YemekTarifleri",
   "BasePath": "_content/YemekTarifleri",
   "Mode": "Default",
@@ -51,6 +51,40 @@
       "OriginalItemSpec": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/obj/Debug/net6.0/scopedcss/projectbundle/YemekTarifleri.bundle.scp.css"
     },
     {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/.DS_Store",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/Comment.css",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": "css/Comment.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/Comment.css"
+    },
+    {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/RecipeCollection.css",
       "SourceId": "YemekTarifleri",
       "SourceType": "Discovered",
@@ -68,12 +102,12 @@
       "OriginalItemSpec": "wwwroot/css/RecipeCollection.css"
     },
     {
-      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/search.css",
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/Search.css",
       "SourceId": "YemekTarifleri",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
       "BasePath": "_content/YemekTarifleri",
-      "RelativePath": "css/search.css",
+      "RelativePath": "css/Search.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/search.css"
+      "OriginalItemSpec": "wwwroot/css/Search.css"
     },
     {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/css/site.css",
@@ -117,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/avatar.jpg",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": "Image/avatar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Image/avatar.jpg"
+    },
+    {
+      "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/patatesli-tavuk-yahnisi.jpg",
+      "SourceId": "YemekTarifleri",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/",
+      "BasePath": "_content/YemekTarifleri",
+      "RelativePath": "Image/patatesli-tavuk-yahnisi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Image/patatesli-tavuk-yahnisi.jpg"
     },
     {
       "Identity": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Image/roma.jpg",
