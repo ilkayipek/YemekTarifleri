@@ -84,7 +84,7 @@ namespace YemekTarifleri.Controllers
             if (user != null)
             {
                 // Kullanıcı doğrulandı
-                // Kullanıcının oturum kimliğini ve diğer bilgileri güncelleyebilirsiniz
+                
                 return true;
             }
 
