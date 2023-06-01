@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var modelState = ViewData.ModelState;
+    var clientValidationEnabled = ViewContext.ClientValidationEnabled;
+    List<Category>? categories = ViewBag.Categories;
+}
+
+<form method="post" asp-controller="RecipeShare" asp-action="RecipeShare" enctype="multipart/form-data">
+    @if (!modelState.IsValid && clientValidationEnabled)
+    {
+        <div class="text-danger">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <div class="form-group">
+        <h5>Tarif ismi</h5>
+        <input type="text" class="form-control" name="name" required />
+        <small class="form-text text-muted">*Zorunlu alan</small>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <h5>Tarif kategorisi</h5>
+        <select class="form-select" name="categoryId">
+            @if (categories != null)
+            {
+                foreach (var category in categories)
+                {
+                    <option value="@category.id">@category.name</option>
+                }
+            }
+        </select>
+    </div>
+    <p></p>
+    <p></p>
+    <h5>Tarif Resminizi Seçiniz</h5>
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" name="image" id="customFile" required>
+        <label class="custom-file-label" for="customFile">Dosya seç</label>
+    </div>
+    <p></p>
+    <p></p>
+    <div class="form-group">
+        <h5 for="exampleFormControlTextarea1">Kullanılan malzemeleri yazınız</h5>
+        <textarea class="form-control" name="ingredients" rows="3" required></textarea>
+    </div>
+    <p></p>
+    <div class="form-group">
+        <h5 for="exampleFormControlTextarea1">Tarifinizi Yapılışını</h5>
+        <textarea class="form-control" name="cooking" rows="3" required></textarea>
+    </div>
+    <p></p>
+    <div class="text-center default-background-color my-4 ">
+        <button type="submit" class="btn btn-primary btn-lg w-100 default-background-color">Tarif Gönder</button>
+    </div>
+    <p></p>
+</form>
