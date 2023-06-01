@@ -16,17 +16,19 @@
     <None Remove="Views\Search\" />
     <None Remove="Views\SignIn\" />
     <None Remove="Views\SignUp\" />
+    <None Remove="Views\RecipeShare\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\DetailRecipe\" />
     <Folder Include="Content\" />
-    <Folder Include="wwwroot\Image\" />
     <Folder Include="DataBase\" />
     <Folder Include="ViewComponents\" />
     <Folder Include="Views\Privacy\" />
     <Folder Include="Views\Search\" />
     <Folder Include="Views\SignIn\" />
     <Folder Include="Views\SignUp\" />
+    <Folder Include="Views\RecipeShare\" />
+    <Folder Include="wwwroot\UserImages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Content\images\gorselsec.png" />
@@ -35,15 +37,13 @@
     <Content Remove="wwwroot\Content\images\" />
     <Content Remove="wwwroot\Image\gorselsec.png" />
     <Content Remove="wwwroot\Image\paris.jpeg" />
-    <Content Remove="wwwroot\Image\superman.jpeg" />
-    <Content Remove="wwwroot\Image\" />
     <Content Remove="wwwroot\Image\kizkulesi.jpg" />
+    <Content Remove="wwwroot\UserImages\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\Image\gorselsec.png" />
-    <None Include="wwwroot\Image\paris.jpeg" />
-    <None Include="wwwroot\Image\superman.jpeg" />
-    <None Include="wwwroot\Image\kizkulesi.jpg" />
+    <None Include="wwwroot\Images\gorselsec.png" />
+    <None Include="wwwroot\Images\paris.jpeg" />
+    <None Include="wwwroot\Images\kizkulesi.jpg" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
@@ -56,5 +56,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
   </ItemGroup>
 </Project>
