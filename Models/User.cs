@@ -9,9 +9,9 @@ namespace YemekTarifleri.Models
     {
         [Key]
         [Column("kullaniciId")]
-        public int? id { get; set; }
+        public int id { get; set; }
         [Column("kullaniciKullaniciAdi")]
-        public String? userName { get; set; }
+        public String userName { get; set; }
         [Column("kullaniciSifre")]
         public String? password { get; set; }
         [Column("kullaniciMail")]
@@ -22,6 +22,8 @@ namespace YemekTarifleri.Models
         public Boolean? userType { get; set; }
         [Column("kullaniciAvatar")]
         public String? avatar { get; set; }
+        [Column("kullaniciCinsiyet")]
+        public bool? gender { get; set; }
 
         public List<Recipe> recipes { get; set; }
         public List<Comment>? comments { get; set; }
