@@ -41,9 +41,7 @@
     <Content Remove="wwwroot\UserImages\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="wwwroot\Images\gorselsec.png" />
     <None Include="wwwroot\Images\paris.jpeg" />
-    <None Include="wwwroot\Images\kizkulesi.jpg" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
