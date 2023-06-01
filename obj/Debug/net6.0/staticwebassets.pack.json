@@ -13,18 +13,6 @@
       "PackagePath": "staticwebassets/Images/avatar.jpg"
     },
     {
-      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Images/gorselsec.png",
-      "PackagePath": "staticwebassets/Images/gorselsec.png"
-    },
-    {
-      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Images/kizkulesi.jpg",
-      "PackagePath": "staticwebassets/Images/kizkulesi.jpg"
-    },
-    {
-      "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Images/paris.jpeg",
-      "PackagePath": "staticwebassets/Images/paris.jpeg"
-    },
-    {
       "Id": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/wwwroot/Images/patatesli-tavuk-yahnisi.jpg",
       "PackagePath": "staticwebassets/Images/patatesli-tavuk-yahnisi.jpg"
     },

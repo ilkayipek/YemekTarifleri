@@ -4,7 +4,7 @@
     var path2 = "Image/avatar.jpg";
 
 
-    var recipesWithUsers = ViewBag.RecipesWithUsers;
+    List<Recipe> recipesWithUsers = ViewBag.RecipesWithUsers;
     Recipe isMealOfDay = ViewBag.IsMealOfDay; 
 }
 
@@ -67,13 +67,13 @@
             <div class="row mb-5">
                 @if (recipesWithUsers != null)
                 {
-                    foreach (Recipe item in recipesWithUsers)
+                    for(var i=recipesWithUsers.Count-1;-1<i;i--)
                     {
                         <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                             <div class="card card-inverse card-info">
-                                @if (item.image != null)
+                                @if (recipesWithUsers[i].image != null)
                                 {
-                                    <img class="card-img-top" src=@item.image>
+                                    <img class="card-img-top" src=@recipesWithUsers[i].image>
                                 }
                                 else
                                 {
@@ -81,9 +81,9 @@
                                 }
                                 <div class="card-block">
                                     <figure class="profile">
-                                        @if (item.user != null)
+                                        @if (recipesWithUsers[i].user != null)
                                         {
-                                            <img src=@item.user.avatar class="profile-avatar" alt="">
+                                            <img src=@recipesWithUsers[i].user.avatar class="profile-avatar" alt="">
                                         }
                                         else
                                         {
@@ -91,20 +91,20 @@
                                         }
 
                                     </figure>
-                                    <h6 class="card-title mt-3">@item.user?.nameAndSurname</h6>
+                                    <h6 class="card-title mt-3">@recipesWithUsers[i].user?.nameAndSurname</h6>
                                     <div>
                                         <h4>
-                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe" asp-route-detailId="@item.id" style="text-decoration:none;color:#305D90">@item.name</a>
+                                            <a asp-area="" asp-controller="DetailRecipe" asp-action="DetailRecipe" asp-route-detailId="@recipesWithUsers[i].id" style="text-decoration:none;color:#305D90">@recipesWithUsers[i].name</a>
 
                                         </h4>
                                     </div>
                                     <div class="card-text">
                                         <h6>İçindekiler:</h6>
-                                        @item.ingredients
+                                        @recipesWithUsers[i].ingredients
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <small>@item.date</small>
+                                    <small>@recipesWithUsers[i].date</small>
 
                                 </div>
                                 <asp:Button ID="Button1" runat="server" Text="Sayfaya Git" OnClick="Button1_Click" />
