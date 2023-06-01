@@ -4,16 +4,17 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddControllers(options =>
+builder.Services.AddMvc().AddViewOptions(options =>
 {
-    options.Filters.Add(typeof(SessionFilter));
+    options.HtmlHelperOptions.ClientValidationEnabled = true;
 });
 
 
+
+
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

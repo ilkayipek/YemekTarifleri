@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ucTOjkuu4M3pI+mKbwxQzRVd5Viik1Uxf5EnoX9T5TpsfK6efD5qcrd/7tOVlZI7x2l2tV0X4hke6qi/PPhRKQ==",
+  "dgSpecHash": "4ZgIKD/365JfiwIKc7eieAwLwiBhn3D6tcEoE81Rd0g0lyEAL3R5I7xIwQ1gn9PHsLffUa+zIcsTDfyglibLKg==",
   "success": true,
   "projectFilePath": "/Users/macbook/Documents/GitHub/YemekTarifleri/YemekTarifleri/YemekTarifleri.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,7 @@
     "/Users/macbook/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.5/microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/microsoft.extensions.configuration/6.0.0/microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
