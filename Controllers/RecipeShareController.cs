@@ -46,7 +46,7 @@ namespace YemekTarifleri.Controllers
                         cooking = model.cooking,
                         categoryId = model.categoryId,
                         isMealOfDay = false,
-                        image = $"~/UserImages/{model.image.FileName}"
+                        image = $"/UserImages/{model.image.FileName}"
                         
                     };
                     db.recipes.Add(newRecipe);
