@@ -21,7 +21,7 @@
         totalstar += (comment.point ?? 0);
     }
 
-    var averagePoint = totalstar / comments.Count;
+    int averagePoint = (int)(totalstar / comments.Count);
 
 
     var modelState = ViewData.ModelState;
@@ -65,7 +65,7 @@
                             <!-- Preview image figure-->
                             @if (recipe.image != null)
                             {
-                                <figure class="mb-4"><img class="img-fluid rounded" src=@recipe.image alt="..." /></figure>
+                                <figure class="mb-4"><img class="img-fluid " style="border-radius:4%;" src=@recipe.image alt="..." /></figure>
                             }
                             else
                             {
